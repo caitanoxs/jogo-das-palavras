@@ -1,57 +1,15 @@
-let palavra;
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
 
-function setup() {
-  createCanvas(400, 400);
-  palavra = palavraAleatoria();
-}
-
-function palavraAleatoria(){
-  let palavras = ["volei", "bola", "saque", "bloqueio", "rede"];
-  return random(palavras);
-}
-
-
-function inicializaCores(){
-  background("white");
-  fill("green");
-  textSize (64);
-  textAlign(CENTER,CENTER);
-  
-}
-
-function palavraParcial(minimo, maximo){
- let quantidade = map(mouseX, minimo, maximo, 1, palavra.length);
-  let parcial = palavra.substring(0,quantidade);
-  return parcial;
-  
-}
-
-function draw() {
-  inicializaCores();
-  let texto = palavraParcial(0,width);
-  text(texto, 200, 200);
-  
- /* if (mouseX < 50){
-    let palavra = "f";
-    text(palavra,200, 200);
-  } else if (mouseX<100){
-    let palavra = "fu";
-    text (palavra, 200, 200)
-  } else if (mouseX<150){
-    let palavra = "fut";
-    text (palavra, 200, 200)
-  } else if (mouseX<200){
-    let palavra = "fute";
-    text (palavra, 200, 200)
-  } else if (mouseX<250){
-    let palavra = "futeb";
-    text (palavra, 200, 200)
-  } else if (mouseX<300){
-    let palavra = "futebo";
-    text (palavra, 200, 200)
-  } else if (mouseX<400){
-    let palavra = "futebol";
-    text (palavra, 200, 200)
-  }*/
- 
-}
+  </head>
+  <body>
+    <main>
+    </main>
+    <script src="sketch.js"></script>
+  </body>
+</html>
